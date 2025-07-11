@@ -43,7 +43,6 @@ The main goal of this challenge was to:
   </tr> 
 </table>
 
-
 ## Links
 
 * Solution URL: [GitHub Repo](https://github.com/dinruz/recipe-page)
@@ -72,30 +71,27 @@ The main goal of this challenge was to:
   * `text-indent` - for first line indentation of `<p>` and `<li>`
   * `list-style-position: inside` - for indentation inside `<ol>` / `<ul>`
 *  **multi-line list text alignment**: Learned to use `padding-left` and `text-indent` for list item text alignment
+
 * **styling lists' markers**
   * use of **`li::marker` selector** with color and font-weight property 
+
 * **table styling**
   * spacing between table columns using `padding-right` on `td:first-child` and `padding-left` on `td:last-child` 
   * full-width table borders** applying `border-bottom` to `<td>` elements while controlling width in percentages (%) for `td:first-child` and `td:last-child` with `border-collapse: collapse`
+
 * **`<hr>` not rendering** - correct by adding `width: 100%` (DevTools was revealed there was no width)
 
 ### Continued development
 
 **Areas for Further Development:**
 
-- **Responsive Design**
-  - media queries
-  - various responsive units (rem, em, vw, vh)
-- **A11y**
-  - ARIA attributes,keyboard navigation etc.
-- **Advanced CSS Styling**:
-  - more CSS techniques for pixel-perfect design
-  - animations, transitions etc.
-
+- **Responsive Design**: media queries, responsive units (rem, em, vw, vh)
+- **A11y**: ARIA attributes,keyboard navigation etc.
+- **Advanced CSS Styling**: more CSS techniques for pixel-perfect design, animations, transitions etc.
 
 ### Useful resources
 
-* [MDN: **'::marker'**](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker)
+* [MDN: **::marker**](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker)
 
 ## Author
 
