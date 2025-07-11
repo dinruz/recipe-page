@@ -42,7 +42,8 @@ body{
     line-height: 1.6;
 }
 
-ul,ol{
+ul,
+ol{
     list-style-position: inside;
 }
 
@@ -51,9 +52,9 @@ li::marker{
     font-weight:bold;
 }
 
-li {
+li{
     padding-left: 2.5em;  
-    text-indent: -1.5em;    /*multiline alignment: l. 55-56*/
+    text-indent: -1.5em;    /* multiline alignment: l. 56-57 */
     margin-bottom:0.5em;
 }
 
@@ -79,7 +80,7 @@ main{
 
 footer{
     margin:0 auto;
-    padding:20px;
+    padding:40px;
 }
 
 footer a{
@@ -143,11 +144,11 @@ footer a:focus {
 
 /* Nutrition table */
 
-
 .nutrition__macro table {
     width: 100%;
     border-collapse: collapse; 
     border: none; 
+    margin-top:20px;
 }
 
 .nutrition__macro td {
@@ -155,32 +156,26 @@ footer a:focus {
     border-bottom: 1px solid var(--stone-150);
 }
 
-
 .nutrition__macro td:first-child {
     padding-left: 25px;
-    width: 70%; }
-
+    width: 70%; 
+}
 
 .nutrition__macro td:last-child {
     padding-left: 20px;
     padding-right: 50px;
     width: 30%; 
-    text-align: right; /* Poravnaj tekst desno */
-    font-weight: bold;
-    color: var(--brown-800);
+    text-align: right;
 }
 
-/* Ukloni border s zadnjeg reda */
-.nutrition__macro tr:last-child td { /* Ciljamo TD u zadnjem redu */
+.nutrition__macro tr:last-child td { 
     border-bottom: none;
 }
 
-/* Ostatak koda */
 .value {
-    /* Ova klasa ti sada vjerojatno više ne treba ako td:last-child radi posao */
-    /* Ako ipak treba, osiguraj da nema konflikta s td:last-child */
+    font-weight: bold;
+    color: var(--brown-800);
 }
-
 
 /*--- Headings ---*/
 
