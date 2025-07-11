@@ -38,8 +38,8 @@ The main goal of this challenge was to:
     <td align="center"><h4>Solution screenshot</h4></td>
   </tr>
   <tr>
-    <td align="center"> <img src="./instructions/preview.png" alt="Preview from challenge" width="450"> </td>
-    <td align="center"> <img src="./screenshot.png" alt="Solution screenshot" width="450"> </td>
+    <td align="center"> <img src="./instructions/preview.jpg" alt="Preview from challenge" width="400"> </td>
+    <td align="center"> <img src="./screenshot.png" alt="Solution screenshot" width="400"> </td>
   </tr> 
 </table>
 
@@ -58,41 +58,46 @@ The main goal of this challenge was to:
 
 ### Built with
 
-* HTML5
-* CSS3
+* **HTML5**
+* **CSS3**
   * Custom CSS properties - variables
   * flexbox
-* Tools & Workflow: *PerfectPixel*, *Visual Studio Code*
+* Tools & Workflow: PerfectPixel, Visual Studio Code
 
 ### What I learned
 
 **I learned:**
 
 *  proper **identation**
-  * `text-indent` - for first line indentation of <p>  and <li>
-  * `list-style-position: inside` - for indentation inside <ol> / <ul>
+  * `text-indent` - for first line indentation of `<p>` and `<li>`
+  * `list-style-position: inside` - for indentation inside `<ol>` / `<ul>`
 *  **multi-line list text alignment**: Learned to use `padding-left` and `text-indent` for list item text alignment
 * **styling lists' markers**
-  * use of **`li::marker` selector** with `color` and `font-weight` property 
+  * use of **`li::marker` selector** with color and font-weight property 
 * **table styling**
-* **spacing between table columns** using `padding-right` on `td:first-child` and `padding-left` on `td:last-child` 
-* **full-width table borders** applying `border-bottom` to <td> elements while controlling width in percentages (%) for `td:first-child` and `td:last-child` with `border-collapse: collapse`
-* **<hr> not rendering** - correct by adding `width: 100%` (DevTools was revealed there was no width)
+  * spacing between table columns using `padding-right` on `td:first-child` and `padding-left` on `td:last-child` 
+  * full-width table borders** applying `border-bottom` to `<td>` elements while controlling width in percentages (%) for `td:first-child` and `td:last-child` with `border-collapse: collapse`
+* **`<hr>` not rendering** - correct by adding `width: 100%` (DevTools was revealed there was no width)
 
 ### Continued development
 
 **Areas for Further Development:**
 
-- **Responsive Design**: media queries, various responsive units (rem, em, vw, vh) for truly adaptable layouts
-- **A11y**: ARIA attributes,keyboard navigation etc.
-- **Advanced CSS Styling**: more CSS techniques for pixel-perfect design, animations/transitions etc.
+- **Responsive Design**
+  - media queries
+  - various responsive units (rem, em, vw, vh)
+- **A11y**
+  - ARIA attributes,keyboard navigation etc.
+- **Advanced CSS Styling**:
+  - more CSS techniques for pixel-perfect design
+  - animations, transitions etc.
 
 
 ### Useful resources
 
-* [MDN: **::marker**](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker)
+* [MDN: **'::marker'**](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker)
 
 ## Author
 
 * Github profile: [dinruz](https://github.com/dinruz)
-* FrontEnd Mentor profile: [dinruz](https://www.frontendmentor.io/profile/dinruz)
+* Frontend Mentor profile: [dinruz](https://www.frontendmentor.io/profile/dinruz)
