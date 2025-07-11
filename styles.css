@@ -39,17 +39,22 @@ body{
     color: var(--stone-600);
     background-color:var(--stone-100);
     min-height:100vh;
-    line-height: 2em;
+    line-height: 1.6;
 }
 
-ul,
-ol{
+ul,ol{
     list-style-position: inside;
 }
 
 li::marker{
-    color:var(--rose-800);
-    text-indent: 1.5em;
+    color:var(--brown-800);
+    font-weight:bold;
+}
+
+li {
+    padding-left: 2.5em;  
+    text-indent: -1.5em;    /*multiline alignment: l. 55-56*/
+    margin-bottom:0.5em;
 }
 
 hr{
@@ -58,6 +63,9 @@ hr{
     width:100%;
 }
 
+a{
+    font-weight: bold;
+}
 
 /*--- Main Components ---*/
 
@@ -71,6 +79,22 @@ main{
 
 footer{
     margin:0 auto;
+    padding:20px;
+}
+
+footer a{
+    color:var(--rose-800);
+}
+
+footer a:hover,
+footer a:focus {
+     color:var(--grey-800);
+}
+
+.ingredients,
+.instruction,
+.nutrition{
+    margin: 25px 0;
 }
 
 /*--- Card components ---*/
@@ -83,44 +107,29 @@ footer{
     width: 55%;
     height: fit-content;
     max-width: 90%;
-    padding: 40px;
+    padding:40px;
     margin: 120px 75px;
     background-color: var(--white);
     border-radius: 20px;
-    gap:10px;
-    border:2px solid red;
   }
 
-.card img{
+.intro img{
     max-width: 100%;
     height:auto;
-    margin-bottom:35px;
+    margin-bottom:20px;
     border-radius: 10px;
-    border:2px solid red;
 }
 
-.card__info{
-    line-height: 1.5em;
-}
-
-.card__time{
+.intro__time{
     display:flex;
     flex-direction:column;
     justify-content:center;
-    margin-top:20px;
+    margin-top:30px;
     margin-bottom:15px;
     width:100%;
     background-color:var(--rose-50);
-    padding:20px 20px  20px 25px;
-    border:2px solid blue;
-}
-
-.card__time-list {
-    padding:8px;
-}
-
-.card__time-list ol{
-    list-style-position: inside;
+    padding:15px 20px;
+    line-height: 1.9rem;
 }
 
 .ingredients__list{
@@ -129,9 +138,48 @@ footer{
 }
 
 .instructions{
-
+    margin-top:15px;
 }
 
+/* Nutrition table */
+
+
+.nutrition__macro table {
+    width: 100%;
+    border-collapse: collapse; 
+    border: none; 
+}
+
+.nutrition__macro td {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--stone-150);
+}
+
+
+.nutrition__macro td:first-child {
+    padding-left: 25px;
+    width: 70%; }
+
+
+.nutrition__macro td:last-child {
+    padding-left: 20px;
+    padding-right: 50px;
+    width: 30%; 
+    text-align: right; /* Poravnaj tekst desno */
+    font-weight: bold;
+    color: var(--brown-800);
+}
+
+/* Ukloni border s zadnjeg reda */
+.nutrition__macro tr:last-child td { /* Ciljamo TD u zadnjem redu */
+    border-bottom: none;
+}
+
+/* Ostatak koda */
+.value {
+    /* Ova klasa ti sada vjerojatno više ne treba ako td:last-child radi posao */
+    /* Ako ipak treba, osiguraj da nema konflikta s td:last-child */
+}
 
 
 /*--- Headings ---*/
@@ -141,25 +189,22 @@ h1{
     color: var(--stone-900);
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 17px;
+    margin-bottom: 11px;
 }
 
-h2{
+h2 {
     font-family: "Young Serif", Times, serif;
     font-size: 28px;
     font-weight: 400;
-    color: var(--brown-800);
     margin-bottom:15px;
+    color: var(--brown-800);
 }
 
-.instructions h2{
-    margin-top:18px;
-}
-
-.card__time h2{
-    font-family:"Outfit",Times, serif;
-    color:var(--rose-800);
+.intro h2{
+    font-family: "Outfit",Times, serif;
+    color: var(--rose-800);
     font-size: 20px;
     font-weight: 700;
-    margin:0px;
+    margin-top: 55px;
+    text-indent: 1.5em;
 }
